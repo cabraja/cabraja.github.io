@@ -1,0 +1,239 @@
+/* LAPTOPS ------------- */
+
+@media only screen and (max-width: 1400px) {
+  #landing-left {
+    width: 63%;
+    height: 100vh;
+    background-color: rgb(61, 61, 61);
+  }
+  #landing-text {
+    width: 80%;
+  }
+  #landing-text h1 {
+    font-size: 5rem;
+  }
+  #landing-text h2 {
+    font-size: 3.4rem;
+  }
+  #skills-list i {
+    font-size: 4.5rem;
+  }
+
+  .project {
+    width: 90%;
+    height: 470px;
+  }
+  .project-photo {
+    height: 470px;
+  }
+  .project-skills-list i {
+    font-size: 2.8rem;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+}
+
+/* SMALLER LAPTOPS -------------------*/
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 15px;
+  }
+  #landing-left {
+    width: 68%;
+  }
+  #landing-text {
+    width: 80%;
+  }
+}
+
+/* PHONES ----------------*/
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 14px;
+  }
+  #landing {
+    height: 100vh;
+  }
+
+  #landing-left {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  #landing-text {
+    width: 82%;
+    margin-left: 5vw;
+  }
+  nav {
+    display: none;
+  }
+
+  #git-mail {
+    position: absolute;
+    top: auto;
+    bottom: 6vh;
+    right: 18px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #git-mail i {
+    color: rgb(190, 190, 190);
+  }
+
+  /* MENU BARS */
+  #menu {
+    display: initial;
+    position: fixed;
+    top: 1rem;
+    right: 0.7rem;
+    z-index: 3;
+    padding: 5px;
+    border-radius: 2px;
+    transition: 0.2s;
+  }
+
+  .bar {
+    width: 35px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+    margin: 5px;
+    transition: 0.6s;
+  }
+  /* MENU BARS */
+
+  #nav-alt {
+    display: none;
+  }
+
+  #nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: -100vw;
+    background-color: rgba(3, 120, 141, 0.815);
+    backdrop-filter: blur(4px);
+    transition: 0.5s;
+  }
+  #nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+
+  /* NAV --------------------------*/
+
+  /* ABOUT -------------------------------*/
+
+  #about {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #about-left {
+    width: 100%;
+    height: 30vh;
+    background-image: url("https://images.unsplash.com/photo-1594904351111-a072f80b1a71?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
+    background-size: cover;
+    background-position: center;
+  }
+  #about-right {
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  section h3 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  article {
+    color: whitesmoke;
+    width: 82%;
+    margin: 10px auto;
+  }
+  .blue-line {
+    width: 100px;
+    height: 4px;
+    background-color: #61dbfb;
+    margin-bottom: 18px;
+  }
+  article p {
+    font-size: 1rem;
+  }
+  #skills-list i {
+    font-size: 2.8rem;
+  }
+  h6 {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 4px;
+  }
+
+  /* ABOUT----------------------- */
+
+  /* PROJECTS ---------------------------*/
+
+  #projects {
+    padding-top: 5vh;
+  }
+
+  .project {
+    flex-direction: column;
+    height: 110vh;
+  }
+  .project-photo {
+    height: 40vh;
+    width: 100%;
+    background-color: #61dbfb;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .project-content {
+    width: 100%;
+    height: 70vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 2% 4%;
+    text-align: right;
+  }
+
+  .project-content h4 {
+    font-size: 1.8rem;
+    margin-top: 18px;
+  }
+
+  .project-content p {
+    font-size: 1rem;
+  }
+
+  .project-skills-list i {
+    font-size: 2.2rem;
+  }
+
+  .project-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .project-buttons a {
+    padding: 16px 24px 10px 24px;
+    font-size: 1.9rem;
+  }
+}

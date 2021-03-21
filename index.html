@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihajlo Cabraja</title>
+    <script src="https://kit.fontawesome.com/a5025c90e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/index.css">
+    <link rel="stylesheet" href="./assets/mobile.css">
+</head>
+<body>
+    <div id="landing">
+        <nav>
+            <a href="#landing">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div id="nav">
+            <a href="#landing">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div id="git-mail">
+            <a href="mailto: cabrajamihajlo@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a target="_blank" href="https://github.com/cabraja?tab=repositories"><i class="fab fa-github"></i></a>
+        </div>
+
+        <div id="landing-left">
+
+            <div id="menu" onclick="moveMenu()">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
+
+            <div id="landing-text">
+                <h3>Hello, I am</h3>
+                <h1>Mihajlo Čabraja</h1>
+                <h2>Front-End/React Developer</h2>
+                <a href="#about">See More</a>
+            </div>
+        </div>
+
+        <div id="landing-right">
+
+        </div>
+    </div>
+
+    <div id="about">
+        <div id="about-left">
+            <div id="about-left-content"></div>
+        </div>
+
+        <div id="about-right">
+            <article>
+                <section>
+                    <h3>About Me</h3>
+                    <div class="blue-line"></div>
+                </section>
+
+                <p>
+                    I am a front-end web developer and web-designer hoping to transition to a full-stack developer in near future. I am
+                    currently living in Belgrade where I am studying Internet Technologies at School of Vocational Studies "ICT College". I
+                    have discovered my passion for coding just over two years ago when I started making my own static web pages in HTML and
+                    CSS. Since then I have been almost constantly improving my skills and learning new languages and technologies. Right now
+                    I am mostly practicing and making personal projects in HTML/CSS, Javascript and React.
+                    I am hoping to set foot in the industry soon and start working for a company where I can add new tools to my skillset,
+                    improve the existing ones and grow as a part of a team of professional programmers.
+                </p>
+            </article>
+
+            <article>
+                <section>
+                    <h3>Skillset</h3>
+                    <div class="blue-line"></div>
+                </section>
+
+                <div id="skills-list">
+                
+                    <div class="skill">
+                        <i id="html5" class="fab fa-html5"></i>
+                        <h6>HTML 5</h6>
+                    </div>
+                
+                    <div class="skill">
+                        <i class="fab fa-css3-alt"></i>
+                        <h6>CSS 3</h6>
+                    </div>
+                
+                    <div class="skill">
+                        <i class="fab fa-js"></i>
+                        <h6>JavaScript</h6>
+                    </div>
+                
+                    <div class="skill">
+                        <i class="fab fa-react"></i>
+                        <h6>React.js</h6>
+                    </div>
+                
+                    <div class="skill">
+                        <i id="git" class="fab fa-git-alt"></i>
+                        <h6>Git</h6>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div id="projects-heading">
+            <h3>Projects</h3>
+            <div class="blue-line"></div>
+        </div>
+
+        <div id="projects-list">
+            <div class="project" id="project1">
+                <div class="project-photo"></div>
+
+                <div class="project-content">
+                    <div class="project-name">
+                        <h4>Furniture E-Commerce</h4>
+                        <div class="blue-line"></div>
+                    </div>
+
+                    <p>Furniture online shop built entirely in React using ES6 Javascript and modern React principles like Hooks and utilizing
+                    only functional components. Website is fully responsive.</p>
+
+                    <div class="project-skills">
+                        
+                        <div class="project-skills-name">
+                            <h4>Tech Used:</h4>
+                            <div class="blue-line"></div>
+                        </div>
+
+                        <div class="project-skills-list">
+                            <div class="skill">
+                                <i id="html5" class="fab fa-html5"></i>
+                            </div>
+                            
+                            <div class="skill">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            
+                            <div class="skill">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            
+                            <div class="skill">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            
+                            <div class="skill">
+                                <i id="git" class="fab fa-git-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-buttons">
+                        <a target="_blank" href="https://github.com/cabraja/e-commerce/tree/master" class="code-link">Code</a>
+                        <a target="_blank" href="https://cabraja.github.io/e-commerce/" class="live-link">Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" id="project2">
+                <div class="project-photo"></div>
+            
+                <div class="project-content">
+                    <div class="project-name">
+                        <h4>Password Generator</h4>
+                        <div class="blue-line"></div>
+                    </div>
+            
+                    <p>This is a perfect place to create an uncrakable password for all of your online accounts! You can select any length
+                    between 6 and 12 and what type of characters will be used in your password. After that just click "Copy" button and it
+                    will be copied to your clipboard.</p>
+            
+                    <div class="project-skills">
+            
+                        <div class="project-skills-name">
+                            <h4>Tech Used:</h4>
+                            <div class="blue-line"></div>
+                        </div>
+            
+                        <div class="project-skills-list">
+                            <div class="skill">
+                                <i id="html5" class="fab fa-html5"></i>
+                            </div>
+            
+                            <div class="skill">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+            
+                            <div class="skill">
+                                <i class="fab fa-js"></i>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="project-buttons">
+                        <a target="_blank" href="https://github.com/cabraja/password-generator" class="code-link">Code</a>
+                        <a target="_blank" href="https://password-generator-os.netlify.app/" class="live-link">Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" id="project3">
+                <div class="project-photo"></div>
+            
+                <div class="project-content">
+                    <div class="project-name">
+                        <h4>Food Ideas And Recipes</h4>
+                        <div class="blue-line"></div>
+                    </div>
+            
+                    <p>Don't know what to eat tonight? "What To Eat Tonight" will give you an idea on what meal to prepare at home, including
+                    ingredients and the whole recipe. All of the information was provided by <a target="_blank" href="https://www.themealdb.com/api.php">The MealDB</a>.</p>
+            
+                    <div class="project-skills">
+            
+                        <div class="project-skills-name">
+                            <h4>Tech Used:</h4>
+                            <div class="blue-line"></div>
+                        </div>
+            
+                        <div class="project-skills-list">
+                            <div class="skill">
+                                <i id="html5" class="fab fa-html5"></i>
+                            </div>
+            
+                            <div class="skill">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+            
+                            <div class="skill">
+                                <i class="fab fa-js"></i>
+                            </div>
+
+                            <div class="skill">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            
+                            <div class="skill">
+                                <i id="git" class="fab fa-git-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="project-buttons">
+                        <a target="_blank" href="https://github.com/Chaki2000/Food-Idea" class="code-link">Code</a>
+                        <a target="_blank" href="https://chaki2000.github.io/Food-Idea/" class="live-link">Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" id="project4">
+                <div class="project-photo"></div>
+            
+                <div class="project-content">
+                    <div class="project-name">
+                        <h4>Photos From Unsplash</h4>
+                        <div class="blue-line"></div>
+                    </div>
+            
+                    <p>UnBash Photos is website that generates endless list of royalty free photos which you can download without any cost. It
+                    utilizes <a target="_blank" href="https://picsum.photos/">Lorem Picsum API</a> that gets photos from Unsplash. Infinite scroll is set up using npm package called <a target="_blank" href="https://www.npmjs.com/package/lodash.debounce">lodash debounce</a>.
+                    </p>
+            
+                    <div class="project-skills">
+            
+                        <div class="project-skills-name">
+                            <h4>Tech Used:</h4>
+                            <div class="blue-line"></div>
+                        </div>
+            
+                        <div class="project-skills-list">
+                            <div class="skill">
+                                <i id="html5" class="fab fa-html5"></i>
+                            </div>
+            
+                            <div class="skill">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+            
+                            <div class="skill">
+                                <i class="fab fa-js"></i>
+                            </div>
+            
+                            <div class="skill">
+                                <i class="fab fa-react"></i>
+                            </div>
+            
+                            <div class="skill">
+                                <i id="git" class="fab fa-git-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="project-buttons">
+                        <a target="_blank" href="https://github.com/cabraja/unsplash-clone/tree/master" class="code-link">Code</a>
+                        <a target="_blank" href="https://cabraja.github.io/unsplash-clone/" class="live-link">Live</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="contact">
+        <div id="contact-info">
+    
+            <div id="nav-alt">
+                <a href="#landing">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+            </div>
+
+            <div id="nav">
+                <a href="#landing">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+            </div>
+    
+            <ul>
+                <li><i class="fas fa-envelope"></i> cabrajamihajlo@gmail.com</li>
+                <li><i class="fas fa-phone"></i> +381 62 1045986</li>
+                <li><i class="fab fa-github"></i> <a target="_blank" href="https://github.com/cabraja">https://github.com/cabraja</a></li>
+                <li><i class="fas fa-file"></i> <a target="_blank" href="./assets/Mihajlo Čabraja Web Developer CV.pdf" download>Download my
+                        CV in PDF</a></li>
+            </ul>
+        </div>
+    
+        <hr id="footer-hr" />
+    
+        <h5>&copy; Mihajlo Čabraja Web Developer Portfolio</h5>
+    
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
