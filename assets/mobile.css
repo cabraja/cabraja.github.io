@@ -52,6 +52,26 @@
     width: 28%;
     margin-bottom: 10px;
   }
+  .project-skills-list{
+    flex-wrap: wrap;
+  }
+  .project-buttons{
+    margin-top: 20px;
+  }
+  .project-buttons a{
+    padding: 14px 20px;
+  }
+  .code-link{
+    margin-right: 0px;
+  }
+  #contact ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact ul li i{
+    margin-bottom: 6px;
+  }
 }
 
 /* PHONES ----------------*/
@@ -268,16 +288,5 @@
   #about{
     height: auto;
   }
-  .project-skills-list{
-    flex-wrap: wrap;
-  }
-  .project-buttons{
-    margin-top: 20px;
-  }
-  .project-buttons a{
-    padding: 14px 20px;
-  }
-  .code-link{
-    margin-right: 0px;
-  }
+  
 }
