@@ -44,6 +44,14 @@
   #landing-text {
     width: 80%;
   }
+
+  #skills-list{
+    flex-wrap: wrap;
+  }
+  #skills-list .skill{
+    width: 28%;
+    margin-bottom: 10px;
+  }
 }
 
 /* PHONES ----------------*/
@@ -172,6 +180,14 @@
   article p {
     font-size: 1rem;
   }
+  #skills-list{
+    flex-wrap: wrap;
+  }
+  #skills-list .skill{
+    width: 28%;
+    margin-bottom: 10px;
+  }
+
   #skills-list i {
     font-size: 2.8rem;
   }
@@ -235,5 +251,33 @@
   .project-buttons a {
     padding: 16px 24px 10px 24px;
     font-size: 1.9rem;
+  }
+}
+
+/* SMALLEST PHONES */
+@media only screen and (max-width: 400px){
+  #landing-text h1{
+    font-size: 3.4rem;
+  }
+  #landing-text h2{
+    font-size: 2.7rem;
+  }
+  #about-right{
+    height: auto;
+  }
+  #about{
+    height: auto;
+  }
+  .project-skills-list{
+    flex-wrap: wrap;
+  }
+  .project-buttons{
+    margin-top: 20px;
+  }
+  .project-buttons a{
+    padding: 14px 20px;
+  }
+  .code-link{
+    margin-right: 0px;
   }
 }

@@ -143,7 +143,6 @@ nav a:hover {
 /* About me -------------- */
 
 #about {
-  height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -151,19 +150,20 @@ nav a:hover {
 
 #about-left {
   width: 42%;
-  height: 80vh;
+  height: inherit;
   background-image: url("https://images.unsplash.com/photo-1594904351111-a072f80b1a71?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
   background-size: cover;
   background-position: center;
 }
 #about-left-content {
   background-color: #61dcfb8f;
-  height: inherit;
+  height: 100%;
   width: 100%;
+
 }
 
 #about-right {
-  height: 80vh;
+  padding-top: 2%;
   width: 58%;
   background-color: rgb(61, 61, 61);
   display: flex;
@@ -201,6 +201,7 @@ section h3 {
 
 h6 {
   font-size: 1.5rem;
+  margin-top: 8px;
 }
 
 #skills-list i {
@@ -225,6 +226,9 @@ h6 {
 }
 .fa-git-alt {
   color: #f34f29;
+}
+.fa-php{
+  color: #8993be;
 }
 
 /* PROJECTS ------------------- */
@@ -287,12 +291,9 @@ h6 {
   background-image: url(./img/ecomm.jpg);
 }
 #project2 .project-photo {
-  background-image: url(./img/password.jpg);
+  background-image: url(./img//shoeshop.png);
 }
 #project3 .project-photo {
-  background-image: url(./img/foodapi.jpg);
-}
-#project4 .project-photo {
   background-image: url(./img/unbash.jpg);
 }
 .project-content {
