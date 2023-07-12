@@ -5,8 +5,12 @@
 :root{
     font-size: 15px;
 }
+*{
+    box-sizing: border-box;
+}
 
 body{
     background-image: url('./assets//images/desktop-bg.jpg');
+    background-size: cover;
     height: 100vh;
 }
