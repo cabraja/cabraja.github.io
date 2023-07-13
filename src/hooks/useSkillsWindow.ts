@@ -1,6 +1,6 @@
 import {create} from 'zustand';
 
-interface AboutWindowStore{
+interface SkillsWindowStore{
     isOpen:boolean;
     isMinimized:boolean;
     onMinimize:() => void;
@@ -9,7 +9,7 @@ interface AboutWindowStore{
     onClose:() => void;
 }
 
-const useAboutWindow = create<AboutWindowStore>(set => ({
+const useSkillsWindow = create<SkillsWindowStore>(set => ({
     isOpen:false,
     isMinimized:false,
     onMinimize:() => set({isMinimized:true}),
@@ -18,4 +18,4 @@ const useAboutWindow = create<AboutWindowStore>(set => ({
     onClose: () => set({isOpen: false})
 }))
 
-export default useAboutWindow;
+export default useSkillsWindow;
