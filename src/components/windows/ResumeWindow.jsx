@@ -20,6 +20,8 @@ function ResumeWindow() {
         bodyContent={bodyContent}
         isOpen={resumeWindow.isOpen}
         onClose={resumeWindow.onClose}
+        onMinimize={resumeWindow.onMinimize}
+        onQuit={resumeWindow.onQuit}
         title={'Resume.jpg'}
     />
     </>

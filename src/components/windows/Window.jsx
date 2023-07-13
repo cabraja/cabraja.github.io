@@ -1,19 +1,34 @@
 import {GrClose} from 'react-icons/gr'
 import {LiaFolderOpenSolid} from 'react-icons/lia'
-import { useState,useCallback } from 'react'
+import { useState,useCallback,useEffect } from 'react'
 
-function Window({bodyContent,isOpen,onClose,title}) {
+function Window({bodyContent,isOpen,onClose,title,onMinimize,onQuit}) {
 
   const [showWindow, setShowWindow] = useState(isOpen)
 
+    useEffect(() => {
+      setShowWindow(isOpen);
+  },[isOpen])
+
   const handleClose = useCallback(() => {
     setShowWindow(false);
+    onQuit()
 
     setTimeout(() => {
         onClose()
     }, 300);
 
-},[])
+  },[])
+
+  const handleMinimize = useCallback(() => {
+    setShowWindow(false);
+
+    setTimeout(() => {
+        onMinimize()
+        onClose()
+    }, 300);
+
+  },[])
 
   if(!isOpen){
     return null;
@@ -34,6 +49,7 @@ function Window({bodyContent,isOpen,onClose,title}) {
     ${showWindow ? "translate-y-0" : "translate-y-full"}
     ${showWindow ? "opacity-100" : "opacity-0"}
     ${showWindow ? "scale-100" : "scale-0"}
+    z-50
     `}>
 
 
@@ -59,7 +75,7 @@ function Window({bodyContent,isOpen,onClose,title}) {
           py-1
           hover:text-white
           '
-          onClick={handleClose}
+          onClick={handleMinimize}
           >
             <i className="fa-solid fa-minus pt-[6px]"></i>
           </div>

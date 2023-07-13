@@ -1,6 +1,6 @@
 import {create} from 'zustand';
 
-interface ResumeWindowStore{
+interface AboutWindowStore{
     isOpen:boolean;
     isMinimized:boolean;
     onMinimize:() => void;
@@ -9,7 +9,7 @@ interface ResumeWindowStore{
     onClose:() => void;
 }
 
-const useResumeWindow = create<ResumeWindowStore>(set => ({
+const useAboutWindow = create<AboutWindowStore>(set => ({
     isOpen:false,
     isMinimized:false,
     onMinimize:() => set({isMinimized:true}),
@@ -18,4 +18,4 @@ const useResumeWindow = create<ResumeWindowStore>(set => ({
     onClose: () => set({isOpen: false})
 }))
 
-export default useResumeWindow;
+export default useAboutWindow;

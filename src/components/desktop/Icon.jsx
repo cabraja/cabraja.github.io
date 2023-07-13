@@ -1,5 +1,5 @@
 
-function Icon({image,title}) {
+function Icon({image,title,onClick}) {
   return (
     <div className="
     flex
@@ -16,9 +16,10 @@ function Icon({image,title}) {
     hover:border-blue-200
     hover:bg-blue-50
     hover:bg-opacity-50
-    ">
-        <img src={image} alt={title} className="w-[48px]"/>
-        <p className="text-sm">{title}</p>
+    "
+    onClick={onClick}>
+        <img src={image} alt={title} className="h-[56px]"/>
+        <p className="text-sm mt-1">{title}</p>
     </div>
   )
 }
