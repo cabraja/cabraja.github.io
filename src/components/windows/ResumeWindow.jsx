@@ -2,10 +2,13 @@ import Window from "./Window"
 import useResumeWindow from '../../hooks/useResumeWindow'
 import resume from '../../assets/images/resume.jpg'
 import Button from "../Button"
+import useWindows from "../../hooks/useWindows"
 
-function ResumeWindow() {
+async function ResumeWindow() {
 
-    const resumeWindow = useResumeWindow()
+    const useWindows = await useWindows();
+
+    const index = useWindows.windows.findIndex(item => item.id == 'resume')
 
     const bodyContent = (
         <div>
@@ -18,10 +21,10 @@ function ResumeWindow() {
     <>
     <Window 
         bodyContent={bodyContent}
-        isOpen={resumeWindow.isOpen}
-        onClose={resumeWindow.onClose}
-        onMinimize={resumeWindow.onMinimize}
-        onQuit={resumeWindow.onQuit}
+        isOpen={useWindows[index].isOpen}
+        onClose={useWindows[index].onClose}
+        onMinimize={useWindows[index].onMinimize}
+        onQuit={useWindows[index].onQuit}
         title={'Resume.jpg'}
     />
     </>
