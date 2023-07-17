@@ -10,6 +10,7 @@ function Icon({image,title,onClick}) {
     transition
     rounded-sm
     p-2
+    text-center
     border-[1px]
     border-transparent
     hover:border-[1px]
