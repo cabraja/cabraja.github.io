@@ -3,7 +3,7 @@ import useSkillsWindow from "../../hooks/useSkillsWindow"
 import Heading from "../Heading"
 
 // ICONS
-import {SiHtml5,SiCss3,SiJavascript,SiTypescript,SiReact,SiAngular,SiBootstrap,SiTailwindcss,SiFigma,SiAdobe,SiNodedotjs,SiNextdotjs,SiPhp,SiLaravel,SiMysql,SiMongodb,SiGit,SiGitlab} from 'react-icons/si'
+import {SiHtml5,SiCss3,SiJavascript,SiTypescript,SiReact,SiAngular,SiBootstrap,SiTailwindcss,SiFigma,SiAdobe,SiNodedotjs,SiNextdotjs,SiPhp,SiLaravel,SiPostgresql,SiMysql,SiMongodb,SiGit,SiGitlab} from 'react-icons/si'
 import {DiSass} from 'react-icons/di'
 import usa from '../../assets/images/usa.png'
 import serbia from '../../assets/images/serbia.png'
@@ -100,6 +100,11 @@ function SkillsWindow() {
         name:'MySQL',
         icon: SiMysql,
         color: '#00758f'
+      },
+      {
+        name:'PostgreSQL',
+        icon: SiPostgresql,
+        color: '#0064a5'
       },
       {
         name:'NoSQL',
