@@ -4,6 +4,7 @@ import Desktop from "./components/desktop/Desktop"
 import AboutWindow from "./components/windows/AboutWindow"
 import SkillsWindow from "./components/windows/SkillsWindow"
 import ProjectsWindow from "./components/windows/ProjectsWindow"
+import ContactWindow from "./components/windows/ContactWindow"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
        <AboutWindow />
        <SkillsWindow />
        <ProjectsWindow />
+       <ContactWindow />
 
         <Desktop />
 

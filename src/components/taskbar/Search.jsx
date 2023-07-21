@@ -9,11 +9,13 @@ import skills from '../../assets/images/skills.png'
 import folder from '../../assets/images/folder.png'
 import github from '../../assets/images/github-mark-white.png'
 import linkedin from '../../assets/images/linkedin-logo.png'
+import contact from '../../assets/images/contact.png'
 // HOOKS
 import useResumeWindow from "../../hooks/useResumeWindow"
 import useAboutWindow from "../../hooks/useAboutWindow"
 import useSkillsWindow from "../../hooks/useSkillsWindow"
 import useProjectsWindow from "../../hooks/useProjectsWindow"
+import useContactWindow from '../../hooks/useContactWindow'
 
 function Search() {
 
@@ -21,6 +23,7 @@ function Search() {
   const aboutWindow = useAboutWindow()
   const skillsWindow = useSkillsWindow()
   const projectsWindow = useProjectsWindow()
+  const contactWindow = useContactWindow()
 
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [keyword, setKeyword] = useState('')
@@ -58,12 +61,19 @@ function Search() {
       img: folder,
       onClick: projectsWindow.onOpen,
     },
+    {
+      title: 'Contact',
+      img: contact,
+      onClick: contactWindow.onOpen,
+    },
   ]
 
   icons = icons.filter(item => item.title.toLowerCase().includes(keyword.toLowerCase()));
 
   return (
-    <div className='
+    <div
+    id='search'
+    className='
     flex
     flex-row
     grow-[4]
@@ -142,6 +152,7 @@ function Search() {
             gap-4
             px-2
             text-white
+            pb-2
             '>
               {
                 icons.length > 0

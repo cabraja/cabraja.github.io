@@ -53,3 +53,24 @@ body{
     background-color: #BB9BDB;
   }
   
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  #search * {
+    scrollbar-width: auto;
+    scrollbar-color: #737373 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  #search *::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  #search *::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  #search *::-webkit-scrollbar-thumb {
+    background-color: #737373;
+    border-radius: 0px;
+    border: 0px none #ffffff;
+  }
