@@ -18,7 +18,7 @@ function TaskbarEnd() {
     const formatedTime = (
         <div className='flex flex-col items-center text-sm'>
             <p>{String(datetime.getHours()).padStart(2, '0')}:{String(datetime.getMinutes()).padStart(2, '0')} {datetime.getHours() < 12 ? 'AM' : 'PM'}</p>
-            <p>{datetime.getDay()}/{datetime.getMonth()}/{datetime.getFullYear()}</p>
+            <p>{datetime.getDate()}/{datetime.getMonth()+1}/{datetime.getFullYear()}</p>
         </div>
     );
 

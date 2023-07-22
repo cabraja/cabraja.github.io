@@ -110,12 +110,14 @@ function Search() {
 
         <div className={`
         absolute
-        -top-[35vh]
+        md:-top-[35vh]
+        -top-[45vh]
         left-0
         bg-neutral-800
         backdrop-opacity-70
         w-full
-        h-[35vh]
+        md:h-[35vh]
+        h-[45vh]
         transition
         duration-300
         backdrop-blur
@@ -140,7 +142,7 @@ function Search() {
             sticky
             top-0
             bg-neutral-800
-            z-50
+            z-30
             '
             onClick={() => setIsSearchOpen(false)}>
               <RiCloseFill className='transition hover:text-neutral-400' size={26}/>
