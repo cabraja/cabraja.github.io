@@ -22,6 +22,24 @@ body{
 #signin-wrapper > div{
   backdrop-filter: blur(5px);
 }
+
+@keyframes signinFade {
+  from{
+    opacity: 0%;
+    transform: translateY(40vh);
+  }
+  to{
+    opacity: 100%;
+    transform: translateY(0vh);
+  }
+}
+
+#signin-content{
+  animation: signinFade 1s ease-in-out forwards;
+}
+
+
+
 /* SCROLL */
 /* Firefox */
 * {
