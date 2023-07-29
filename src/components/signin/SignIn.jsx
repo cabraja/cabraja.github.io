@@ -33,6 +33,7 @@ function SignIn() {
         ">
 
           <div 
+          id='signin-avatar'
           className="
           rounded-full
           bg-neutral-100/50
@@ -47,9 +48,10 @@ function SignIn() {
             <img src={user} alt="User" className='w-9/12 h-9/12'/>
           </div>
 
-          <h1 className='text-white mt-6 text-2xl md:text-4xl'>Mihajlo Čabraja's Portfolio</h1>
+          <h1 className='text-white mt-6 text-2xl md:text-4xl signin-animated'>Mihajlo Čabraja's Portfolio</h1>
 
           <button className='
+          signin-animated
           text-white
           mt-5
           px-8
@@ -64,6 +66,7 @@ function SignIn() {
           onClick={() => setShowSignin(false)}>
             Sign in
           </button>
+          <small className='mt-4 signin-animated-delay text-neutral-300'>Hint: For best experience, view this website on desktop</small>
 
         </div>
       </div>

@@ -34,10 +34,18 @@ body{
   }
 }
 
-#signin-content{
+
+#signin-avatar{
   animation: signinFade 1s ease-in-out forwards;
 }
-
+.signin-animated{
+  transform: translateY(60vh);
+  animation: signinFade 1s 1s ease-in-out forwards;
+}
+.signin-animated-delay{
+  transform: translateY(60vh);
+  animation: signinFade 1s 1.8s ease-in-out forwards;
+}
 
 
 /* SCROLL */
