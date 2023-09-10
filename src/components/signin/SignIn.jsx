@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import user from '../../assets/images/user.svg'
+import ae86 from '../../assets/images/ae86.jpg'
 
 function SignIn() {
 
@@ -44,8 +45,10 @@ function SignIn() {
           flex
           items-center
           justify-center
+          border-neutral-500
+          border-2
           ">
-            <img src={user} alt="User" className='w-9/12 h-9/12'/>
+            <img src={ae86} alt="User" className='w-full h-full rounded-full'/>
           </div>
 
           <h1 className='text-white mt-6 text-2xl md:text-4xl signin-animated'>Mihajlo Čabraja's Portfolio</h1>
