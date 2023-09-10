@@ -21,6 +21,8 @@ function Taskbar() {
     flex-wrap
     md:flex-nowrap
     items-stretch
+    transition
+    duration-500
     '
     style={{backgroundColor: desktopTheme.currentTheme.color}}>
         <TaskbarStart />

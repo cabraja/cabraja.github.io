@@ -25,22 +25,25 @@ function Desktop() {
   const settingsWindow = useSettingsWindow()
   const desktopTheme = useDesktopTheme()
 
+
   return (
-    <div className="h-[100vh] bg-center" style={{backgroundImage:`url(${desktopTheme.currentTheme.image})`}}>
-      <div className="
-      w-fit
-      text-white
-      grid
-      grid-cols-2
-      gap-4
-      p-6
-      ">
-          <Icon title={'My Resume'} image={resume} onClick={resumeWindow.onOpen}/>
-          <Icon title={'About Me'} image={info} onClick={aboutWindow.onOpen}/>
-          <Icon title={'Skills'} image={skills} onClick={skillsWindow.onOpen}/>
-          <Icon title={'My Projects'} image={folder} onClick={projectsWindow.onOpen}/>
-          <Icon title={'Contact'} image={contact} onClick={contactWindow.onOpen}/>
-          <Icon title={'Settings'} image={settings} onClick={settingsWindow.onOpen}/>
+    <div id="desktop-bg" className=" h-[100vh] bg-center transition" style={{backgroundImage:`url(${desktopTheme.currentTheme.image})`}}>
+      <div className="w-full h-full"  >
+        <div className="
+        w-fit
+        text-white
+        grid
+        grid-cols-2
+        gap-4
+        p-6
+        ">
+            <Icon title={'My Resume'} image={resume} onClick={resumeWindow.onOpen}/>
+            <Icon title={'About Me'} image={info} onClick={aboutWindow.onOpen}/>
+            <Icon title={'Skills'} image={skills} onClick={skillsWindow.onOpen}/>
+            <Icon title={'My Projects'} image={folder} onClick={projectsWindow.onOpen}/>
+            <Icon title={'Contact'} image={contact} onClick={contactWindow.onOpen}/>
+            <Icon title={'Settings'} image={settings} onClick={settingsWindow.onOpen}/>
+        </div>
       </div>
     </div>
   )
