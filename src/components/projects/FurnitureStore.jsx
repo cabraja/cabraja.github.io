@@ -58,7 +58,7 @@ function FurnitureStore() {
       
       <Separator size={5}/>
 
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, neque. Corporis praesentium, exercitationem assumenda animi itaque quisquam quas accusantium incidunt voluptatum aut quaerat rem perferendis vitae repellat totam eaque beatae quod laborum cumque sequi adipisci, quam labore provident repellendus. Ipsam tenetur temporibus distinctio quod ratione voluptatum aut earum obcaecati aliquam.</p>
+      <p>Furniture online shop built entirely in React using ES6 Javascript and modern React principles like Hooks and utilizing only functional components. Website is fully responsive.</p>
 
       <Separator size={5}/>
       <Heading title={'Technologies Used'}/>

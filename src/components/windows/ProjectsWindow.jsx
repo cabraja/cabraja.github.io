@@ -8,6 +8,7 @@ import Separator from '../Separator'
 // PROJECTS
 import FurnitureStore from "../projects/FurnitureStore"
 import SneakersStore from "../projects/SneakersStore"
+import CarMarketplaceAPI from "../projects/CarMarketplaceAPI"
 
 function ProjectsWindow() {
 
@@ -23,6 +24,11 @@ function ProjectsWindow() {
         id:2,
         name: 'Sneakers Store',
         component: <SneakersStore />
+      },
+      {
+        id:3,
+        name: 'Car Marketplace API',
+        component: <CarMarketplaceAPI />
       },
     ]
 
