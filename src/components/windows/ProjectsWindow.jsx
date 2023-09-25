@@ -9,6 +9,7 @@ import Separator from '../Separator'
 import FurnitureStore from "../projects/FurnitureStore"
 import SneakersStore from "../projects/SneakersStore"
 import CarMarketplaceAPI from "../projects/CarMarketplaceAPI"
+import BudgetBeam from "../projects/BudgetBeam"
 
 function ProjectsWindow() {
 
@@ -29,6 +30,11 @@ function ProjectsWindow() {
         id:3,
         name: 'Car Marketplace API',
         component: <CarMarketplaceAPI />
+      },
+      {
+        id:4,
+        name: 'BudgetBeam',
+        component: <BudgetBeam />
       },
     ]
 
@@ -57,7 +63,13 @@ function ProjectsWindow() {
 
       return (
         <>
-        <div className="flex flex-row gap-8 justify-between md:justify-start">
+        <div className="grid
+            grid-cols-2
+            md:grid-cols-4
+            lg:grid-cols-6
+            xl:grid-cols-7
+            gap-x-4
+            gap-y-6">
           {projects.map(item => <Icon title={item.name} key={item.id} image={folder} onClick={() => handleClick(item.id)} />)}
         </div>
         </>

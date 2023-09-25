@@ -110,15 +110,15 @@ function FurnitureStore() {
       gap-4
       '>
         <div className='col-span-1 row-span-1 drop-shadow-xl'>
-          <img className='object-cover h-full w-full' src='https://i.imgur.com/HRg6VfU.png' alt='furniture store image 1'/>
+          <img className='object-scale-down h-full w-full' src='https://i.imgur.com/HRg6VfU.png' alt='furniture store image 1'/>
         </div>
 
         <div className='col-span-1 row-span-2 drop-shadow-xl'>
-          <img className='object-cover h-full w-full' src='https://i.imgur.com/0I7LOyR.png' alt='furniture store image 2'/>
+          <img className='object-scale-down h-full w-full' src='https://i.imgur.com/0I7LOyR.png' alt='furniture store image 2'/>
         </div>
 
         <div className='col-span-1 row-span-1 drop-shadow-xl'>
-          <img className='object-cover h-full w-full' src='https://i.imgur.com/sRmrp1l.png' alt='furniture store image 3'/>
+          <img className='object-scale-down h-full w-full' src='https://i.imgur.com/sRmrp1l.png' alt='furniture store image 3'/>
         </div>
       </div>
     </div>

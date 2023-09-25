@@ -18,32 +18,32 @@ const useDesktopTheme = create<DesktopThemeStore>(set => ({
             color: '#3b0764'
         },
         {
-            image:'https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2153&q=80',
+            image:'https://i.imgur.com/TvfzTOo.jpg',
+            color: '#000e61'
+        },
+        {
+            image:'https://i.imgur.com/MLEY0DH.jpg',
             color: '#2f2f30'
         },
         {
-            image:'https://images.unsplash.com/photo-1565099999544-27eca1cf8d1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-            color: '#ff80fa'
+            image:'https://i.imgur.com/aMr5CGQ.jpg',
+            color: '#b38697'
         },
         {
-            image:'https://images.unsplash.com/photo-1586776977607-310e9c725c37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+            image:'https://i.imgur.com/uKy0lQx.jpg',
             color: '#232727'
         },
         {
-            image:'https://images.unsplash.com/photo-1544371273-5464838150ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+            image:'https://i.imgur.com/wOjcwsg.jpg',
             color: '#0c378f'
         },
         {
-            image:'https://images.unsplash.com/photo-1624644128945-920c0da6931b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+            image:'https://i.imgur.com/mU58jWA.jpg',
             color: '#199838'
         },
         {
-            image:'https://images.unsplash.com/photo-1499241142330-28701ea87ff4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
+            image:'https://i.imgur.com/4nPIv6h.jpg',
             color: '#332820'
-        },
-        {
-            image:'https://images.unsplash.com/photo-1548268274-565207facb00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-            color: '#242524'
         },
     ],
     currentTheme: {

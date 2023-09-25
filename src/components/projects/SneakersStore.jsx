@@ -120,15 +120,15 @@ function SneakersStore() {
       gap-4
       '>
         <div className='col-span-1 row-span-1 drop-shadow-xl'>
-          <img className='object-cover h-full w-full' src='https://i.imgur.com/QJOc5Zs.png' alt='Sneakers store image 1'/>
+          <img className='object-scale-down h-full w-full' src='https://i.imgur.com/QJOc5Zs.png' alt='Sneakers store image 1'/>
         </div>
 
         <div className='col-span-1 row-span-2 drop-shadow-xl'>
-          <img className='object-cover h-full w-full' src='https://i.imgur.com/8x1INMk.png' alt='Sneakers store image 2'/>
+          <img className='object-scale-down h-full w-full' src='https://i.imgur.com/8x1INMk.png' alt='Sneakers store image 2'/>
         </div>
 
         <div className='col-span-1 row-span-1 drop-shadow-xl'>
-          <img className='object-cover h-full w-full' src='https://i.imgur.com/hjBdCul.png' alt='Sneakers store image 3'/>
+          <img className='object-scale-down h-full w-full' src='https://i.imgur.com/hjBdCul.png' alt='Sneakers store image 3'/>
         </div>
       </div>
     </div>
