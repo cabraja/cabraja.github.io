@@ -10,7 +10,7 @@ function ResumeWindow() {
     const bodyContent = (
         <div>
             <img src={resume} className="mb-8" alt="Resume"/>
-            <Button label={'Download as PDF'} onClick={() => {}} small={false}/>
+            <a href="resume.pdf" download><Button label={'Download as PDF'} small={false}/></a>
         </div>
     )
 
