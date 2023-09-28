@@ -65,7 +65,7 @@ const skills = [
       
       <Separator size={5}/>
 
-      <p>This React/Next.js budgeting app simplifies financial management by allowing users to track expenses and income. It offers graphical data representations for spending patterns, income trends, and a detailed calendar view for daily expenses. Users can categorize transactions, set budgets, and export financial data. The app promotes informed financial decisions and helps users achieve their financial goals. Calendar feature will also be added in the future.</p>
+      <p>This React/Next.js budgeting app simplifies financial management by allowing users to track expenses and income. It offers graphical data representations for spending patterns, income trends, and a detailed calendar view for daily expenses. Users can categorize transactions, set budgets, and export financial data. The app promotes informed financial decisions and helps users achieve their financial goals. Calendar feature is also available as a practical and intuitive way of keeping your expenses and income in order.</p>
 
       <Separator size={5}/>
       <Heading title={'Technologies Used'}/>
@@ -116,7 +116,7 @@ const skills = [
       gap-4
       '>
         <div className='col-span-1 row-span-1 drop-shadow-xl'>
-          <img className='object-scale-down h-full w-full' src='https://i.imgur.com/RjXZQFh.png' alt='BudgetBeam image 1'/>
+          <img className='object-scale-down h-full w-full' src='https://i.imgur.com/pBppH73.png' alt='BudgetBeam image 1'/>
         </div>
 
         <div className='col-span-1 row-span-3 drop-shadow-xl'>
