@@ -17,24 +17,28 @@ function ProjectsWindow() {
 
     const projects = [
       {
+        id:4,
+        name: 'BudgetBeam',
+        isStarred:true,
+        component: <BudgetBeam />
+      },
+      {
         id:1,
         name: 'Furniture Store',
+        isStarred:false,
         component: <FurnitureStore />
       },
       {
         id:2,
         name: 'Sneakers Store',
+        isStarred:false,
         component: <SneakersStore />
       },
       {
         id:3,
         name: 'Car Marketplace API',
+        isStarred:false,
         component: <CarMarketplaceAPI />
-      },
-      {
-        id:4,
-        name: 'BudgetBeam',
-        component: <BudgetBeam />
       },
     ]
 
@@ -66,11 +70,11 @@ function ProjectsWindow() {
         <div className="grid
             grid-cols-2
             md:grid-cols-4
-            lg:grid-cols-6
-            xl:grid-cols-7
+            xl:grid-cols-6
+            2xl:grid-cols-7
             gap-x-4
             gap-y-6">
-          {projects.map(item => <Icon title={item.name} key={item.id} image={folder} onClick={() => handleClick(item.id)} />)}
+          {projects.map(item => <Icon title={item.name} key={item.id} image={folder} isStarred={item.isStarred} onClick={() => handleClick(item.id)} />)}
         </div>
         </>
         

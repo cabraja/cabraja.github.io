@@ -3,6 +3,7 @@ import Heading from '../Heading'
 import Separator from '../Separator'
 import SkillIcon from '../skills/SkillIcon'
 import {SiTailwindcss,SiTypescript,SiReact,SiGit,SiGithub,SiNextdotjs,SiPostgresql,SiPrisma,SiSupabase} from 'react-icons/si'
+import {GoLinkExternal} from 'react-icons/go'
 
 function BudgetBeam() {
 
@@ -55,7 +56,13 @@ const skills = [
       icon: SiGithub,
       color: '#171515',
       url: 'https://github.com/cabraja/budget-beam'
-    }
+    },
+    {
+      name:'Live Link',
+      icon: GoLinkExternal,
+      color: '#2965f1',
+      url: 'https://budget-beam.vercel.app/'
+    },
   ]
 
   return (

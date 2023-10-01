@@ -1,5 +1,6 @@
+import {AiFillStar} from 'react-icons/ai'
 
-function Icon({image,title,onClick}) {
+function Icon({image,title,onClick,isStarred = false}) {
   return (
     <div className="
     flex
@@ -21,6 +22,10 @@ function Icon({image,title,onClick}) {
     onClick={onClick}>
         <img src={image} alt={title} className="h-[56px]"/>
         <p className="text-sm mt-1">{title}</p>
+
+      {
+        isStarred && <AiFillStar size={22} className='absolute top-0 right-4 md:right-0 text-yellow-500'/>
+      }
     </div>
   )
 }
