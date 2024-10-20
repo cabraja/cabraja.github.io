@@ -34,12 +34,12 @@ function TaskbarMiddle() {
     w-3/5
     md:w-full
     ">
-       <TaskbarIcon image={pdf} isActive={resumeWindow.isMinimized} onClick={resumeWindow.onOpen}/>
-       <TaskbarIcon image={info} isActive={aboutWindow.isMinimized} onClick={aboutWindow.onOpen}/>
-       <TaskbarIcon image={skills} isActive={skillsWindow.isMinimized} onClick={skillsWindow.onOpen}/>
-       <TaskbarIcon image={folder} isActive={projectsWindow.isMinimized} onClick={projectsWindow.onOpen}/>
-       <TaskbarIcon image={contact} isActive={contactWindow.isMinimized} onClick={contactWindow.onOpen}/>
-       <TaskbarIcon image={settings} isActive={settingsWindow.isMinimized} onClick={settingsWindow.onOpen}/>
+       <TaskbarIcon image={pdf} isActive={resumeWindow.isMinimized || resumeWindow.isOpen} onClick={resumeWindow.onOpen}/>
+       <TaskbarIcon image={info} isActive={aboutWindow.isMinimized || aboutWindow.isOpen} onClick={aboutWindow.onOpen}/>
+       <TaskbarIcon image={skills} isActive={skillsWindow.isMinimized || skillsWindow.isOpen} onClick={skillsWindow.onOpen}/>
+       <TaskbarIcon image={folder} isActive={projectsWindow.isMinimized || projectsWindow.isOpen} onClick={projectsWindow.onOpen}/>
+       <TaskbarIcon image={contact} isActive={contactWindow.isMinimized || contactWindow.isOpen} onClick={contactWindow.onOpen}/>
+       <TaskbarIcon image={settings} isActive={settingsWindow.isMinimized || settingsWindow.isOpen} onClick={settingsWindow.onOpen}/>
     </div>
   )
 }

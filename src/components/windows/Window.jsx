@@ -1,5 +1,3 @@
-import {GrClose} from 'react-icons/gr'
-import {LiaFolderOpenSolid} from 'react-icons/lia'
 import { useState,useCallback,useEffect } from 'react'
 
 function Window({bodyContent,isOpen,onClose,title,onMinimize,onQuit}) {

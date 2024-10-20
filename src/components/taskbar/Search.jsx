@@ -1,79 +1,98 @@
-import {LiaSearchSolid} from 'react-icons/lia'
-import { useState } from 'react'
-import {RiCloseFill} from 'react-icons/ri'
-import SearchIcon from './SearchIcon'
+import { LiaSearchSolid } from "react-icons/lia";
+import { useState } from "react";
+import { useRef, useEffect } from "react";
+import SearchIcon from "./SearchIcon";
 // ICON IMAGES
-import resume from '../../assets/images/resume-small.jpg'
-import info from '../../assets/images/info.png'
-import skills from '../../assets/images/skills.png'
-import folder from '../../assets/images/folder.png'
-import github from '../../assets/images/github-mark-white.png'
-import linkedin from '../../assets/images/linkedin-logo.png'
-import contact from '../../assets/images/contact.png'
+import resume from "../../assets/images/resume-small.jpg";
+import info from "../../assets/images/info.png";
+import skills from "../../assets/images/skills.png";
+import folder from "../../assets/images/folder.png";
+import github from "../../assets/images/github-mark-white.png";
+import linkedin from "../../assets/images/linkedin-logo.png";
+import contact from "../../assets/images/contact.png";
 // HOOKS
-import useResumeWindow from "../../hooks/useResumeWindow"
-import useAboutWindow from "../../hooks/useAboutWindow"
-import useSkillsWindow from "../../hooks/useSkillsWindow"
-import useProjectsWindow from "../../hooks/useProjectsWindow"
-import useContactWindow from '../../hooks/useContactWindow'
+import useResumeWindow from "../../hooks/useResumeWindow";
+import useAboutWindow from "../../hooks/useAboutWindow";
+import useSkillsWindow from "../../hooks/useSkillsWindow";
+import useProjectsWindow from "../../hooks/useProjectsWindow";
+import useContactWindow from "../../hooks/useContactWindow";
 
 function Search() {
+  const resumeWindow = useResumeWindow();
+  const aboutWindow = useAboutWindow();
+  const skillsWindow = useSkillsWindow();
+  const projectsWindow = useProjectsWindow();
+  const contactWindow = useContactWindow();
 
-  const resumeWindow = useResumeWindow()
-  const aboutWindow = useAboutWindow()
-  const skillsWindow = useSkillsWindow()
-  const projectsWindow = useProjectsWindow()
-  const contactWindow = useContactWindow()
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [keyword, setKeyword] = useState("");
 
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
-  const [keyword, setKeyword] = useState('')
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
 
   let icons = [
     {
-      title: 'Github',
+      title: "Github",
       img: github,
       onClick: null,
-      url: 'https://github.com/cabraja'
+      url: "https://github.com/cabraja",
     },
     {
-      title: 'LinkedIn',
+      title: "LinkedIn",
       img: linkedin,
       onClick: null,
-      url: 'https://www.linkedin.com/in/mcabraja/'
+      url: "https://www.linkedin.com/in/mcabraja/",
     },
     {
-      title: 'My Resume',
+      title: "My Resume",
       img: resume,
       onClick: resumeWindow.onOpen,
     },
     {
-      title: 'About Me',
+      title: "About Me",
       img: info,
       onClick: aboutWindow.onOpen,
     },
     {
-      title: 'Skills',
+      title: "Skills",
       img: skills,
       onClick: skillsWindow.onOpen,
     },
     {
-      title: 'My Projects',
+      title: "My Projects",
       img: folder,
       onClick: projectsWindow.onOpen,
     },
     {
-      title: 'Contact',
+      title: "Contact",
       img: contact,
       onClick: contactWindow.onOpen,
     },
-  ]
+  ];
 
-  icons = icons.filter(item => item.title.toLowerCase().includes(keyword.toLowerCase()));
+  icons = icons.filter((item) =>
+    item.title.toLowerCase().includes(keyword.toLowerCase())
+  );
+
+  function useOutsideAlerter(ref) {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          setIsSearchOpen(false);
+        }
+      }
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
 
   return (
     <div
-    id='search'
-    className='
+      ref={wrapperRef}
+      id="search"
+      className="
     flex
     flex-row
     grow-[4]
@@ -86,29 +105,31 @@ function Search() {
     pe-6
     relative
     z-10
-    '
+    "
     >
-        <div className='
+      <div
+        className="
         flex
         flex-row
-        '
+        "
+        onClick={() => setIsSearchOpen(true)}
+      >
+        <LiaSearchSolid size={20} />
 
-        onClick={() => setIsSearchOpen(true)}>
-          <LiaSearchSolid size={20}/>
-
-          <input 
-            type='text'
-            placeholder='Type here to search'
-            className='
+        <input
+          type="text"
+          placeholder="Type here to search"
+          className="
             ps-3
             outline-none
-          '
+          "
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
-          />
-        </div>
+        />
+      </div>
 
-        <div className={`
+      <div
+        className={`
         absolute
         md:-top-[35vh]
         -top-[45vh]
@@ -124,68 +145,69 @@ function Search() {
         overflow-y-scroll
         ${isSearchOpen ? "translate-y-0" : "translate-y-[200%]"}
         ${isSearchOpen ? "opacity-100" : "opacity-0"}
-        `}>
-          <div className='
+        `}
+      >
+        <div
+          className="
           h-full
           w-full
           relative
           z-0
-          '>
-            <div className='
-            transition
-            cursor-pointer
-            flex
-            flex-row
-            items-center
-            justify-end
-            p-1
-            sticky
-            top-0
-            bg-neutral-800
-            z-30
-            '
-            onClick={() => setIsSearchOpen(false)}>
-              <RiCloseFill className='transition hover:text-neutral-400' size={26}/>
-            </div>
-
-            <div className='
+          "
+        >
+          <div
+            className="
             flex
             flex-col
             gap-4
             px-2
             text-white
             pb-2
-            '>
-              {
-                icons.length > 0
-                ?
-                icons.map((item,index) => {
-                  if(!item.url) return <SearchIcon title={item.title} image={item.img} key={index} onClick={item.onClick}/>
-
+            "
+          >
+            {icons.length > 0 ? (
+              icons.map((item, index) => {
+                if (!item.url)
                   return (
-                    <a href={item.url} key={index} target='_blank'>
-                      <SearchIcon title={item.title} image={item.img} onClick={item.onClick}/>
-                    </a>
-                  )
-                })
-                :
-                <div className='
+                    <SearchIcon
+                      title={item.title}
+                      image={item.img}
+                      key={index}
+                      onClick={item.onClick}
+                    />
+                  );
+
+                return (
+                  <a href={item.url} key={index} target="_blank">
+                    <SearchIcon
+                      title={item.title}
+                      image={item.img}
+                      onClick={item.onClick}
+                    />
+                  </a>
+                );
+              })
+            ) : (
+              <div
+                className="
                 h-[28vh]
                 w-full
                 flex
                 flex-col
                 items-center
                 justify-center
-                '>
-                  <p className='text-neutral-500 mt-5 text-center'>Nothing found...</p>
-                </div>
-              }
-            </div>
-
+                "
+              >
+                <p className="text-neutral-500 mt-5 text-center">
+                  Nothing found...
+                </p>
+              </div>
+            )}
           </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Search
+export default Search;

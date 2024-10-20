@@ -7,7 +7,7 @@ import {SiHtml5,SiCss3,SiJavascript,SiTypescript,SiReact,SiAngular,SiBootstrap,S
 import {DiSass} from 'react-icons/di'
 import usa from '../../assets/images/usa.png'
 import serbia from '../../assets/images/serbia.png'
-import france from '../../assets/images/france.png'
+import germany from '../../assets/images/germany.png'
 
 import SkillIcon from "../skills/SkillIcon"
 import Separator from "../Separator"
@@ -143,8 +143,8 @@ function SkillsWindow() {
         color: '#e24329'
       },
       {
-        name:'French (Begginer)',
-        icon: france,
+        name:'German (Basic)',
+        icon: germany,
         color: '#e24329'
       },
     ]

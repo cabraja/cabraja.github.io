@@ -93,7 +93,7 @@ body{
   /* Firefox */
   #search * {
     scrollbar-width: auto;
-    scrollbar-color: #737373 #ffffff;
+    scrollbar-color: #737373 #ffffff00;
   }
 
   /* Chrome, Edge, and Safari */

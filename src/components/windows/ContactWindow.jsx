@@ -5,6 +5,8 @@ import Heading from '../Heading'
 import Separator from '../Separator'
 import {FiMail} from 'react-icons/fi'
 import {FaGithub,FaLinkedin,FaPhone} from 'react-icons/fa'
+import { FaLocationDot } from "react-icons/fa6";
+
 
 function ContactWindow() {
 
@@ -20,7 +22,7 @@ function ContactWindow() {
             </a>
             <p className="flex flex-row mb-4">
               <FaPhone size={24} className="me-3"/> 
-              +381 62 104 5986
+              +43 676 733 8133
             </p>
 
             <Separator size={5}/>
@@ -35,6 +37,13 @@ function ContactWindow() {
               <FaLinkedin size={24} className="me-3 fill-[#0077b5]"/>
               https://www.linkedin.com/in/mcabraja/
             </a>
+
+            <Heading title={'Location'}/>
+            <Separator size={3}/>
+            <p className="flex flex-row mb-4">
+              <FaLocationDot size={24} className="me-3"/> 
+              Vienna, Austria 🇦🇹
+            </p>
         </div>
     )
 
