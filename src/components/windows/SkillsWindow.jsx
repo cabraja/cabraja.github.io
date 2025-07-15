@@ -3,7 +3,7 @@ import useSkillsWindow from "../../hooks/useSkillsWindow"
 import Heading from "../Heading"
 
 // ICONS
-import {SiHtml5,SiCss3,SiJavascript,SiTypescript,SiReact,SiAngular,SiBootstrap,SiTailwindcss,SiFigma,SiAdobe,SiNodedotjs,SiNextdotjs,SiPhp,SiLaravel,SiPostgresql,SiMysql,SiMongodb,SiGit,SiGitlab,SiPrisma} from 'react-icons/si'
+import {SiHtml5,SiCss3,SiJavascript,SiTypescript,SiReact,SiAngular,SiBootstrap,SiTailwindcss,SiFigma,SiAdobe,SiNodedotjs,SiNextdotjs,SiPhp,SiLaravel,SiPostgresql,SiMysql,SiMongodb,SiGit,SiGitlab,SiPrisma, SiDotnet, SiAzuredevops, SiDocker} from 'react-icons/si'
 import {DiSass} from 'react-icons/di'
 import usa from '../../assets/images/usa.png'
 import serbia from '../../assets/images/serbia.png'
@@ -87,14 +87,9 @@ function SkillsWindow() {
         color: 'black'
       },
       {
-        name:'PHP',
-        icon: SiPhp,
-        color: '#8993be'
-      },
-      {
-        name:'Laravel',
-        icon: SiLaravel,
-        color: 'crimson'
+        name:'.NET',
+        icon: SiDotnet,
+        color: '#512bd4'
       },
       {
         name:'MySQL',
@@ -129,6 +124,16 @@ function SkillsWindow() {
         icon: SiGitlab,
         color: '#e24329'
       },
+      {
+        name: 'Azure Devops',
+        icon: SiAzuredevops,
+        color: '#007FFF'
+      },
+      {
+        name: 'Docker',
+        icon: SiDocker,
+        color: '#0db7ed'
+      }
     ]
 
     const languages = [
